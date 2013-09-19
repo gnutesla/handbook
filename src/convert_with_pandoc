@@ -5,8 +5,15 @@ mkdir build
 # Copiar todas las imágenes
 find -type f \! -name '*.md' -print0 | xargs -0 cp -t build/
 
+# Metadata
+cat > build/book.md <<EOT
+% Manual de Cryptoparty
+% Traducción del Partido Pirata de Argentina
+
+EOT
+
 # Concatenar todos los artículos
-cat ../README.md $(find -name '*.md' | sort) > build/book.md
+cat ../README.md $(find -name '*.md' | sort | grep -v "book\.md") >> build/book.md
 
 pushd build
 
@@ -15,10 +22,10 @@ echo ":: Generando LaTeX"
 [ ! -f book.tex ] &&
 pandoc -V documentclass=book \
        -V fontsize=10pt,a5paper,twoside \
-       -V documentclass=book \
        -V geometry=hcentering \
        -V geometry=bindingoffset=1cm \
        -V lang=spanish \
+       -V links-as-notes \
        --include-in-header=header.tex \
        --latex-engine=xelatex \
        --table-of-contents \
@@ -30,15 +37,15 @@ echo ":: Generando PDF"
 [ ! -f CryptoHandbook.pdf ] &&
 pandoc -V documentclass=book \
        -V fontsize=10pt,a5paper,twoside \
-       -V documentclass=book \
        -V geometry=hcentering \
        -V geometry=bindingoffset=1cm \
        -V lang=spanish \
+       -V links-as-notes \
        --include-in-header=header.tex \
        --latex-engine=xelatex \
        --table-of-contents \
        -o CryptoHandbook.pdf \
-       book.md
+       book.tex
 
 echo ":: Generando EPUB"
 [ ! -f CryptoHandbook.epub ] &&
