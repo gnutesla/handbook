@@ -7,7 +7,7 @@ find -type f \! -name '*.md' -print0 | xargs -0 cp -t build/
 
 # Metadata
 cat > build/book.md <<EOT
-% Manual de Cryptoparty
+% Manual de CryptoParty
 % Traducción del Partido Pirata de Argentina
 % $(date +"%B, %Y")
 
