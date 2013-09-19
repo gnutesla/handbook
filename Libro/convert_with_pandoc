@@ -14,7 +14,7 @@ cat > build/book.md <<EOT
 EOT
 
 # Concatenar todos los artículos
-cat ../README.md $(find -name '*.md' | sort | grep -v "book\.md") >> build/book.md
+cat $(find -name '*.md' | sort | grep -v "book\.md") >> build/book.md
 
 pushd build
 
