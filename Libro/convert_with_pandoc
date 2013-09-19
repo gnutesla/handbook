@@ -56,12 +56,12 @@ pandoc -V lang=spanish \
 
 echo ":: Generando torrent"
 [ ! -f CryptoHandbook.pdf.torrent ] &&
-mktorrent -a udp://tracker.publicbt.com:80 \
+mktorrent -a http://hackcoop.com.ar:6969/announce \
           --verbose \
-          CryptoHandbook.pdf 
+          CryptoHandbook.pdf
 
 [ ! -f CryptoHandbook.epub.torrent ] &&
-mktorrent -a udp://tracker.publicbt.com:80 \
+mktorrent -a http://hackcoop.com.ar:6969/announce \
           --verbose \
           CryptoHandbook.epub
 
