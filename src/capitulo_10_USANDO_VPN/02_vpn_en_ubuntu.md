@@ -98,3 +98,6 @@ Ahora que ha configurado NetworkManager para conectarse a un servicio VPN usando
  ![Desconectando VPN](vpn_ubuntu_016.png)
 
 
+
+
+

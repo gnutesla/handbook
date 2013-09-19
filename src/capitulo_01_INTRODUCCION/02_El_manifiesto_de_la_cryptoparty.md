@@ -36,3 +36,6 @@ La vigilancia no se puede separar de la censura y la esclavitud que implica. Nin
 El código es discurso: es un lenguaje humano creado. Prohibir, censurar o bloquear la criptografía para que la gente no tenga acceso a ella es privar a los seres humanos de un derecho humano, la libertad de expresión.
 
 Aquellos que buscan detener la propagación de la criptografía se asemejan a los clérigos del siglo 15 que trataban de prohibir la imprenta, temerosos de que su monopolio del conocimiento fuera socavado.
+
+
+

@@ -66,3 +66,6 @@ Configuración
  ![¡Conexión establecida!](vpn_osx_13.jpg)
 
  15. Ok, ahora pruebe su conexión
+
+
+

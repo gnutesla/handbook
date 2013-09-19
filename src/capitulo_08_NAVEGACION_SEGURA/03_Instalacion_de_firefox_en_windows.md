@@ -41,3 +41,6 @@ Problemas
 
 Si surgen problemas con el uso de Firefox, consulte la sección de [ayuda](https://support.mozilla.com/kb/Firefox+will+not+start)
 
+
+
+

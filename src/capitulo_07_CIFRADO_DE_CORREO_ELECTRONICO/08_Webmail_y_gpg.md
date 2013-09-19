@@ -12,3 +12,6 @@ Un nuevo archivo llamado "mensaje.asc" se creará. Contiene el mensaje cifrado y
 Para descifrar un mensaje desde la ventana del navegador, basta con escribir `gpg` en la línea de comandos y pulsar Enter. A continuación, copie y pegue el mensaje a descifrar en la ventana de línea de comandos y, después que le pregunten su contraseña, pulse Ctrl+D (esto añade un carácter de fin de archivo y le solicita a gpg el mensaje de texto descifrado).
 
 Si utilizar la línea de comandos le parece demasiado complicado, podría considerar la posibilidad de instalar una aplicación de ayuda como gpgApplet, kgpg o cualquier otra aplicación que posea su sistema operativo.
+
+
+

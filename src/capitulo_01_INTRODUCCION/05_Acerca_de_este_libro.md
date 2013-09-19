@@ -66,3 +66,6 @@ El contenido del Manual de CryptoParty está cubierto por la siguiente licencia
 
  * © Todos los capítulos de los contribuyentes a menos que se indique lo contrario a continuación.
 
+
+
+

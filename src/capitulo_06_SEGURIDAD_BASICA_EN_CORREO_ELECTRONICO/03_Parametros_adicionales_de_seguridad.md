@@ -101,3 +101,6 @@ Necesita primero abrir la ventana de configuración de cuentas (Account Settings
  8. Seleccione la opción 'Automatically delete junk mail other 14 days' en la casilla de verificación para que Thunderbird regularmente elimine los mensajes de correo basura. Para cambiar el período de tiempo para este proceso, introduzca un número diferente (en días) en el cuadro de texto.
  9. Haga clic en 'OK' para guardar los cambios.
 
+
+
+

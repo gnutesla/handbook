@@ -22,3 +22,6 @@ Muchos proveedores comerciales de VPN hacen hincapié en el anonimato que propor
 
 > "Va a cambiar la dirección IP que recibe de su proveedor de Internet para obtener una dirección IP anónima. Le proporcionamos una conexión segura/cifrada entre la computadora e Internet." ([https://www.ipredator.se](https://www.ipredator.se))
 
+
+
+

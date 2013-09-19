@@ -9,3 +9,6 @@ Firefox comienza abriendo una ventana de bienvenida:
 
 ![Bienvenida](ff_ubuntu_2.png)
 
+
+
+

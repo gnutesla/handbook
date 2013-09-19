@@ -55,7 +55,7 @@ SoulSeek
 
 Como en el caso de los programas para compartir archivos entre pares (P2P), los usuarios de Soulseek determinan el contenido disponible, y cuáles archivos se pueden compartir. La red tuvo históricamente una mezcla de música diversa, incluyendo artistas independientes y alternativos, música inédita, tales como demos y cintas de las mezclas, grabaciones piratas, etc. Está totalmente financiado por donaciones, sin publicidad ni cobro de tarifas a usuarios.
 
-> Soulseek no avala ni aprueba el intercambio de materiales con copyright. Sólo debe compartir y descargar archivos para los cuales usted está legalmente autorizado, o ha recibido permiso." (consulte su [página web](http://www.soulseekqt.net]))
+> Soulseek no avala ni aprueba el intercambio de materiales con copyright. Sólo debe compartir y descargar archivos para los cuales usted está legalmente autorizado, o ha recibido permiso." (consulte su [página web](http://www.soulseekqt.net))
 
 La red de Soulseek depende de un par de servidores centrales. Uno soporta al cliente original y a la red, y el otro soporta a la red más nueva. Mientras que estos servidores centrales son claves para coordinar búsquedas y hospedar salas de chat, no juegan ningún rol en la transferencia de archivos entre usuarios, que se desarrolla directamente entre ellos.
 
@@ -79,4 +79,7 @@ I2P comenzó como una ramificación del proyecto Freenet, originalmente concebid
 > El proyecto I2P se formó en el 2003 para apoyar los esfuerzos de aquellos que tratan de construir una sociedad más libre, ofreciéndoles un sistema de comunicación incensurable, anónimo y seguro. I2P es un esfuerzo de desarrollo que produce una red de baja latencia, totalmente distribuida, autónoma, escalable, anónima y resistente. El objetivo es operar con éxito en entornos hostiles - incluso cuando una organización con recursos financieros o políticos lo ataca. Todos los aspectos de la red son de código abierto y están disponibles sin costo, ya que debe asegurar a las personas que lo usan que el software hace lo que dice, al igual que permite que otros puedan contribuir y mejorarlo para derrotar los intentos agresivos que quieren sofocar la libertad de expresión. ([http://www.i2p2.de/](http://www.i2p2.de/))
 
 Para una guía de instalación del software y la configuración de su navegador web consulte la sección sobre Intercambio seguro de archivos - Instalación de I2P. Una vez terminado, el lanzamiento lo llevará a una página de la consola que contiene enlaces a otros sitios y servicios populares. Además de las páginas web habituales (conocidas como eePsites) hay una amplia gama de servicios de aplicaciones disponibles desde la herramienta de blogging para Syndie construido en un cliente de BitTorrent que funciona a través de una interfaz web.
+
+
+
 

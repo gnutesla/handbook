@@ -20,3 +20,6 @@ En segundo lugar, muchos productos que funcionan como computadoras (por ejemplo,
 
 Tercero, y para finalizar, el omitir hablar de ética y de libertad, mencionando únicamente los beneficios prácticos inmediatos, para «vender» el software más fácilmente a ciertos usuarios, especialmente a las empresas, puede ser contraproducente. Si sólo se valoran los aspectos técnicos, como la confiabilidad y la potencia de un programa, se habla de una manera superficial, puramente práctica. Y acá está el germen de la autodestrucción. Si no se enseña a la gente a valorar y respetar su libertad..¿cómo pretender que la defienda?...El software libre es una cuestión de LIBERTAD, no de conveniencia.
 
+
+
+

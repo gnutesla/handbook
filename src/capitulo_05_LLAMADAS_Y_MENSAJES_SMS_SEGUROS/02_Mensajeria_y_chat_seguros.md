@@ -7,3 +7,6 @@ Aunque XMPP utiliza TLS/SSL (ver glosario TLS/SSL) para evitar la interceptació
 
 Vea la sección **Cifrado en mensajería instantánea**
 
+
+
+

@@ -17,3 +17,6 @@ Por último, la falta de anonimato y la privacidad puede que no le afecte, pero 
 
 Mientras lo animamos a ser políticamente activo para mantener su derecho a la privacidad, hemos escrito este libro con el fin de capacitar a las personas que sienten que el mantenimiento de la privacidad en Internet es también una responsabilidad personal. Esperamos que estos capítulos le ayuden a llegar a un punto donde puede sentir que tiene algo de control acerca de cuánto saben de usted otras personas. Cada uno de nosotros tiene el derecho a una vida privada, el derecho a explorar, buscar y comunicarse con los demás como uno desee, sin tener que vivir con el temor de miradas indiscretas.
 
+
+
+
