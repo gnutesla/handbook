@@ -25,3 +25,6 @@ No debe usar el mismo nombre de usuario para diferentes cuentas o un nombre que 
 
 Finalmente, una vez que tenga su cuenta de correo electrónico totalmente configurado para proteger su identidad, la vanidad es su peor enemigo. Debe evitar ser distinto. No trate de ser inteligente, extravagante o único. Incluso la forma de comenzar sus párrafos son datos valiosos para la identificación, especialmente en estos días en que cada ensayo de la escuela y la entrada del blog que ha escrito está disponible en la Internet. Poderosas organizaciones pueden efectivamente utilizar estos textos para construir una base de datos que pueda "rastrearlo digitalmente" por lo que ha escrito.
 
+
+
+

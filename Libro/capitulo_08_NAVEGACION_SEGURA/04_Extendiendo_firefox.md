@@ -138,3 +138,6 @@ Debajo hay una breve lista de extensiones que no están cubiertas en este libro 
  * [**BetterPrivacy**](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/) - administra las "cookies" usadas para rastreaslo mientras visita sitios web. Las cookies son pequeñas cantidades de información almacenada en su navegador. Algunas de ellas son usadas por los publicistas para rastrear los sitios que usted visita.
 
  * [**GoogleSharing**](https://addons.mozilla.org/en-us/firefox/addon/googlesharing/) - Si le preocupa que Google conozca su historial de búsqueda, esta extensión lo ayudará a evitarlo.
+
+
+

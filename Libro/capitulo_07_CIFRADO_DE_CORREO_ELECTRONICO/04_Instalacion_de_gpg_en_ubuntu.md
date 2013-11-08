@@ -17,3 +17,6 @@ Ingrese su contraseña y pulse 'Authenticate'. El proceso de instalación comenz
 
 Cuando el proceso se complete tendrá escasa respuesta desde Ubuntu. La barra de progreso arriba a la izquierda simplemente desaparecerá. El texto 'In Progress' a la derecha también desaparecerá. Enigmail debería estar instalado.
 
+
+
+

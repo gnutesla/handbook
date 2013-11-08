@@ -46,3 +46,6 @@ Otras advertencias
 Algunas aplicaciones, como programas de chat o de correo electrónico puede pedirle guardar o "recordar" su nombre de usuario y contraseña, por lo que no tendrá que introducirlas cada vez que se abre el programa. Si lo hace, puede significar que su contraseña puede ser recuperada por otros programas que se ejecutan en la máquina, o directamente desde el disco duro por alguien con acceso físico a la misma.
 
 Si la información de inicio de sesión se envía a través de una conexión o canal inseguro, podría caer en las manos equivocadas. Consulte los capítulos sobre la navegación segura para más información.
+
+
+

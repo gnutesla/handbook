@@ -85,3 +85,6 @@ La solución es utilizar un protocolo de mensajería que proporciona un *secreto
 
 Puede ser difícil de sopesar la comodidad del acceso móvil a sus claves privadas con el hecho de que los dispositivos móviles son mucho más fáciles de perder, ser robados o hackeados que las máquinas fijas. Cualquier urgencia podría ser el momento exacto en que usted más desea enviar un mensaje confidencial o un mensaje firmado para verificar su identidad, pero también es el momento en el puede que no tenga acceso a las claves privadas si su dispositivo móvil está intervenido o no está cargado con todas sus claves.
 
+
+
+

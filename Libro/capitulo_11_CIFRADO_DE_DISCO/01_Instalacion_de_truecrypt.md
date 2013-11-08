@@ -92,3 +92,6 @@ Puede dejar los valores predeterminados. Si desea instalar TrueCrypt sólo para 
 
 Cuando se complete la instalación aparecerá una confirmación de se ha realizado correctamente. Cierre esta ventana y haga clic en "Finalizar". Ahora continúe con el capítulo sobre el uso de TrueCrypt.
 
+
+
+

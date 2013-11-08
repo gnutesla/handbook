@@ -75,3 +75,6 @@ Instalación de Enigmail
 
 Ahora que ha descargado e instalado exitosamente Enigmail y PGP pase al capítulo que trata acerca de cómo configurar el software para su uso.
 
+
+
+

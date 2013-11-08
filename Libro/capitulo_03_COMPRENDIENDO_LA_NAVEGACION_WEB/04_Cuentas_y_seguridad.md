@@ -20,3 +20,6 @@ Es importante desarrollar hábitos para pensar antes de hacer click en enlaces a
 
 Si utiliza Firefox en su dispositivo, utilice el complemento [NoScript](http://noscript.net), ya que mitiga muchas de las técnicas de *Cross Site Scripting* que permitan que su cookie de login sea robado, pero tenga en cuenta que se deshabilitarán muchas características de algunos sitios web.
 
+
+
+

@@ -287,3 +287,6 @@ Lecturas adicionales
 --------------------
 
 Más documentación referida al uso de GPG con Thunderbird puede ser encontrada en el sitio web del plugin Enigmail. Consulte el [manual de Enigmail](http://enigmail.mozdev.org/documentation/handbook.php.html)
+
+
+

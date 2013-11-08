@@ -54,3 +54,6 @@ Mantenga los valores por defecto y presione 'Next >' entonces verá la misma pan
 El manual de TrueCrypt al cual se refiere no es este, es el que se encuentra en http://www.truecrypt.org/docs/
 
 Presione 'OK' y cierre TrueCrypt. Ahora puede montar el volumen como se describió en el capítulo anterior.
+
+
+

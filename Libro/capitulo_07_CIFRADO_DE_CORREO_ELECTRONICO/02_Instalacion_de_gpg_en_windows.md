@@ -61,3 +61,6 @@ Para empezar a instalar Enigmail, lleve a cabo los siguientes pasos:
 
  ![Reiniciando](enigmail_inst_3.png)
 
+
+
+

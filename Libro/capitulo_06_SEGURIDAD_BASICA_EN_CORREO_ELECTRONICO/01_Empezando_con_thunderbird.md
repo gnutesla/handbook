@@ -117,3 +117,6 @@ Usando Thunderbird por primera vez
 
 Al usar Thunderbird por primera vez será guiado a través de la configuración de su cuenta de correo electrónico. Estos parámetros son definidos por su proveedor de correo electrónico (su ISP o su proveedor de servicios de correo electrónico basado en la web). El próximo capítulo describe cómo configurar su cuenta con la máxima seguridad.
 
+
+
+

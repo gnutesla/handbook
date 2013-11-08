@@ -17,3 +17,6 @@ Actualmente, dieciséis CryptoParties se han realizado en una docena de países 
 
 La CryptoParty ha recibido mensajes de apoyo de la Electronic Frontier Foundation, de AnonyOps, del informante de la NSA Thomas Drake, del ex editor central de WikiLeaks Heather Marsh, y del reportero de Wired, Quinn Norton. Eric Hughes, el autor hace veinte años de *Un manifiesto ciberpunk*, pronunció un discurso de apertura en la primera CryptoParty en Amsterdam.
 
+
+
+

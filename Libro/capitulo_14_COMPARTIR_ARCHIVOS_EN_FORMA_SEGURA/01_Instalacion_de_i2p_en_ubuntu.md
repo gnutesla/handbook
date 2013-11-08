@@ -29,3 +29,6 @@ En la ventana de Connection Settings, haga click en el círculo cercano a Manual
 
 Para más información y cómo configurar proxies para otros navegadores visite la [web de i2p2](http://www.i2p2.de/htproxyports.htm)
 
+
+
+

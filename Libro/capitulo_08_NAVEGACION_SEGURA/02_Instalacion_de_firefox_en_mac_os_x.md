@@ -31,3 +31,6 @@ Felicitaciones, ¡ya está preparado para usar Firefox!
 
 ![Instalación finalizada](ff_mac_inst_8.png)
 
+
+
+
