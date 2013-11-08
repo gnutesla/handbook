@@ -54,6 +54,15 @@ pandoc -V lang=spanish \
        -o CryptoHandbook.epub \
        book.md
 
+echo ":: Generando HTML"
+[ ! -f CryptoHandbook.html ] &&
+pandoc -V lang=spanish \
+       -t html5 \
+       --standalone \
+       --toc \
+       -o CryptoHandbook.html \
+       book.md
+
 echo ":: Generando torrent"
 [ ! -f CryptoHandbook.pdf.torrent ] &&
 mktorrent -a http://hackcoop.com.ar:6969/announce \
