@@ -5,7 +5,7 @@ La única forma segura de cifrar el correo electrónico dentro de la ventana del
 
 Por ejemplo, escriba el texto en un editor de texto como gedit, kate o vim y guárdelo con extensión .txt (en este ejemplo "mensaje.txt"). A continuación, escriba
 
-    gpg-ase-r la.dirección.de.email@o.gpg.id-r su.gpg.id mensaje.txt
+    gpg -ase -r <dirección de email/gpg id> -r <gpg id> mensaje.txt
 
 Un nuevo archivo llamado "mensaje.asc" se creará. Contiene el mensaje cifrado y por lo tanto ya puede adjuntarse en un correo electrónico o se puede copiar y pegar el contenido de forma segura en la ventana del navegador.
 

@@ -16,9 +16,7 @@ En los capítulos previos hemos explicado como configurar un ambiente seguro par
  11. Revocación de su par de claves GPG
  12. Qué hacer si pierde su clave secreta, u olvida se frase de paso
  13. Qué hacer si robaron su clave secreta, o si la misma está comprometida
- 14. Recepción de un mensaje de revocación
- 15. Preparándose para lo peor: copias de resguardo de sus claves
- 16. Lecturas adicionales
+ 14. Copias de resguardo de sus claves
 
 Primero vamos a explicar dos ventanas de diálogo que inevitablemente aparecen después de empezar a usar Thunderbird para cifrar sus correos electrónicos.
 
@@ -48,7 +46,7 @@ Existen varias formas de distribuir su clave pública a los amigos o compañeros
 
 El envío de la clave pública es simple
 
- 1. En Thunderbird, pulse el ícono *Write*.
+ 1. En Thunderbird, pulse el ícono ![GPG Write](gpg_write.png).
 
  2. Envíe un mensaje a su amigo o colega y dígale que le ha enviado su clave PGP pública. Si sus amigos no saben qué significa esto, debe explicárselo y referirles alguna documentación.
 
@@ -56,7 +54,7 @@ El envío de la clave pública es simple
 
  ![Opción de envío](daily_gpg_3.png)
 
- 4. Envíe su correo haciendo click en el botón *Send*.
+ 4. Envíe su correo haciendo click en el botón ![GPG](gpg_send.png).
 
 Recepción de claves públicas y agregado de las mismas a su anillo de claves
 ---------------------------------------------------------------------------
@@ -101,8 +99,8 @@ Uso de servidores de claves públicas
 Otro método para distribuir claves públicas es colocarlas en un servidor. Esto permite que cualquier persona pueda comprobar si su dirección de correo electrónico soporta GPG, y luego descargar su clave pública.
 
 Para guardar su propia clave en un servidor, haga lo siguiente:
-
- 1.Diríjase hacia el administrador de claves utilizando el menú de Thunderbird y haga click en `OpenPGP > Key Management`
+i
+ 1. Diríjase hacia el administrador de claves utilizando el menú de Thunderbird y haga click en `OpenPGP > Key Management`
 
  ![Administración de claves](daily_gpg_11.png)
 
@@ -149,7 +147,7 @@ Para saber si alguna dirección de correo electrónico posee una clave pública 
 Firma de un mensaje en particular
 ---------------------------------
 
-Firmar digitalmente sus mensajes es la manera de probar al destinatario que usted los ha enviado. Quienes reciban su clave pública serán capaces de *verificar* que su mensaje es auténtico.
+Firmar digitalmente sus mensajes es la manera de probar al destinatario que usted los ha enviado. Quienes reciban su clave pública serán capaces de *verificar* que su mensaje es auténtico. Sin embargo, tome nota que firmar un mensaje hará que sea muy difícil (si no imposible) negar que usted ha sido el autor del mensaje.
 
  1. Ofrezca a sus amigos su clave pública, usando los métodos descriptos anteriormente en este capítulo.
 
@@ -286,4 +284,6 @@ Finalmente Thunderbird le preguntará dónde almacenar el archivo de claves. Pue
 Lecturas adicionales
 --------------------
 
-Más documentación referida al uso de GPG con Thunderbird puede ser encontrada en el sitio web del plugin Enigmail. Consulte el [manual de Enigmail](http://enigmail.mozdev.org/documentation/handbook.php.html)
+Más documentación referida al uso de GPG con Thunderbird puede ser encontrada en el sitio web del plugin Enigmail. Consulte el manual de Enigmail 
+
+[http://enigmail.mozdev.org/documentation/handbook.php.html](http://enigmail.mozdev.org/documentation/handbook.php.html)

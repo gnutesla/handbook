@@ -47,4 +47,4 @@ Enigmail presenta un agradable asistente que le ayudará a crear su par de clave
 
  ![Finalizando](gpg_keys_11.png)
 
-Felicitaciones, ahora tiene un cliente de correo electrónico de PGP totalmente configurado. En el próximo capítulo vamos a explicar cómo manejar sus llaves, mensajes de muestra y hacer la encriptación. Thunderbird puede ayudarle a hacer un montón de estas cosas automáticamente. 
+Felicitaciones, ahora tiene un cliente de correo electrónico totalmente configurado con PGP. En el próximo capítulo vamos a explicar cómo manejar sus llaves, mensajes de muestra y hacer la encriptación. Thunderbird puede ayudarle a hacer un montón de estas cosas automáticamente. 

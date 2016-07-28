@@ -50,7 +50,7 @@ Descarga e instalación del software
 
 Como se dijo en la introducción; advertimos en contrario al uso de Apple Mail en combinación con PGP. Por lo tanto, no va a necesitar 'GPGMail', ya que éste habilita PGP en el correo de Apple, y usted puede desactivarlo.
 
-'**Enigmail11**' por otra parte es muy importante, ya que es el componente que permitirá a Thunderbird utilizar PGP. En la captura de pantalla aquí es gris vemos como el programa de instalación no pudo identificar mi instalación de Thunderbird. Dicho así parece ser un error. También puede instalar Enigmail desde dentro de Thunderbird como se explica en otro capítulo.
+'**Enigmail**' por otra parte es muy importante, ya que es el componente que permitirá a Thunderbird utilizar PGP. En la captura de pantalla aquí es gris vemos como el programa de instalación no pudo identificar mi instalación de Thunderbird. Dicho así parece ser un error. También puede instalar Enigmail desde dentro de Thunderbird como se explica en otro capítulo.
 
 Si la opción no aparece en gris en la instalación, debe funcionar.
 

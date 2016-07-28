@@ -41,7 +41,7 @@ Del mismo modo, si usted envía una copia de su clave pública propia a sus cont
 Enigmail también permite adjuntar firmas digitales a sus mensajes. El destinatario del mensaje que tiene una copia original de su clave pública podrá verificar que el correo electrónico proviene de usted, y que su contenido no ha sido alterado en el camino. Del mismo modo, si usted tiene la clave pública del destinatario, puede verificar las firmas digitales en sus mensajes.
 
 Pasos para la instalación
-------------------
+-------------------------
 
 Para empezar a instalar Enigmail, lleve a cabo los siguientes pasos:
 
