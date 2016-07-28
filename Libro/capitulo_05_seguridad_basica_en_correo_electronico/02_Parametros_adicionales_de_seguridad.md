@@ -6,7 +6,7 @@ Thunderbird provee medidas de seguridad adicional para protegerlo del correo bas
 Veremos las siguientes características de seguridad de Thunderbird. Primero un poco de historia sobre por qué debe tener en cuenta algunas de estas medidas:
 
  * **Controles de correo basura adaptables**. Le permiten entrenar a Thunderbird para que pueda identificar correo electrónico no deseado (SPAM) y eliminarlo de su bandeja de entrada. También puede marcar los mensajes como correo basura manualmente si el sistema de su proveedor de correo electrónico falla el correo basura y lo deja pasar.
- * **Integración con el software anti-virus.** Si su software antivirus es compatible con Thunderbird, puede utilizarlo para poner en cuarentena a los mensajes que contienen virus u otros contenidos maliciosos. Si usted se pregunta qué software antivirus trabaja con Thunderbird, puede encontrar una lista aquí: http://kb.mozillazine.org/Antivirus_software.
+ * **Integración con el software anti-virus.** Si su software antivirus es compatible con Thunderbird, puede utilizarlo para poner en cuarentena a los mensajes que contienen virus u otros contenidos maliciosos. Si usted se pregunta qué software antivirus trabaja con Thunderbird, puede encontrar una lista aquí: [http://kb.mozillazine.org/Antivirus_software](http://kb.mozillazine.org/Antivirus_software).
  * **Contraseña maestra.** Para su conveniencia, usted puede hacer que Thunderbird recuerde cada una de las contraseñas individuales de sus cuentas de correo electrónico. Puede especificar una contraseña maestra que se introduzca cada vez que inicie Thunderbird. Esto le permitirá a Thunderbird abrir todas tus cuentas de correo electrónico con sus contraseñas guardadas.
  * **Restricciones a las cookies.** Algunos blogs y sitios web intentan enviar cookies (una pieza de código que almacena información de los sitios web en su computadora) con sus feeds RSS. Estas cookies son utilizan con frecuencia por los proveedores de contenido para ofrecer publicidad dirigida. Thunderbird rechaza las cookies de forma predeterminada, pero se puede configurar para aceptar algunas o todas las cookies.
 
@@ -14,7 +14,6 @@ En la caja de diálogo Options/Preferences de la sección Security Preferences p
 
  * En Windows y Mac OS X, vaya al menú 'Herramientas' y haga clic en 'Opciones'.
  * En Ubuntu u otras versiones de Linux, vaya al menú 'Editar' y haga clic en 'Preferencias'.
-
 
 Configuración de correo basura
 ------------------------------
@@ -77,7 +76,6 @@ Establezca una contraseña maestra
  7. Haga click en el botón 'Close' para cerrar el cuadro de diálogos 'Saved Passwords'.
  8. Haga click en el botón 'OK' para cerrar el cuadro de diálogos 'Options/Preferences'.
 
-
 Controles adaptables para correo basura
 ---------------------------------------
 
@@ -89,7 +87,7 @@ Necesita primero abrir la ventana de configuración de cuentas (Account Settings
 
  2. En Windows o Mac, vaya al menú 'Tools' y seleccione 'Accounts settings'. En Linux, vaya 'Edit menu' y seleccione 'Account Settings'.
 
- 3. Para configurar los controles adaptables de correo basura para una cuenta específica, elija una cuenta y 'Configuración' Junk clic.
+ 3. Para configurar los controles adaptables de correo basura para una cuenta específica, elija una cuenta y seleccione 'Junk Settings'.
 
  ![Configurando controles adaptables](thunderbird_sec_9.jpg)
 

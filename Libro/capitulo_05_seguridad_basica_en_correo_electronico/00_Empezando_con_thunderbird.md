@@ -1,8 +1,8 @@
 Usando Thunderbird
 ==================
 
-![Thunderbird](thunderbird.png)
-
+![Thunderbird](thunderbird.jpg)
+ 
 En las secciones siguientes vamos a usar el programa de correo electrónico Thunderbird de Mozilla para mostrarle cómo configurar su cliente para mayor seguridad. Al igual que el navegador Mozilla Firefox, Thunderbird tiene muchas ventajas sobre sus contrapartes de seguridad como Apple Mail y Outlook.
 
 Thunderbird es un "agente de usuario de correo" (MUA). Esto es diferente de web basadas en servicios de correo electrónico como Gmail de Google. Usted debe instalar la aplicación Thunderbird en el equipo. Thunderbird tiene una interfaz agradable y las características que le permiten gestionar varios buzones, organizar los mensajes en carpetas, y la búsqueda a través de correos con facilidad.
@@ -19,7 +19,7 @@ Instalación de Thunderbird en Windows
 
 La instalación de Thunderbird involucra dos pasos: primero, descargar el software y luego ejecutar el programa de instalación.
 
- 1. Visite la [página de descarga de Thunderbird](http://www.mozillamessaging.com/en-US/thunderbird/). Esta página detectará el sistema operativo de su computadora y el idioma, recomendándole la mejor versión disponible para su uso.
+ 1. Visite la página de descarga de Thunderbird [http://www.mozillamessaging.com/en-US/thunderbird/](http://www.mozillamessaging.com/en-US/thunderbird/). Esta página detectará el sistema operativo de su computadora y el idioma, recomendándole la mejor versión disponible para su uso.
 
  ![Instalación de Thunderbird](thunderbird_inst_1.jpg)
 
@@ -62,7 +62,7 @@ Thunderbird no se ejecutará sin las siguientes librerías o paquetes instalados
  * Pango 1.14 o superior
  * X.Org 1.0 o superior
 
-Mozilla recomienda las siguientes librerías o paquetes:
+Mozilla recomienda que un sistema GNU/Linux tenga también las siguientes librerías o paquetes:
 
  * NetworkManager 0.7 o superior
  * DBus 1.0 o superior
@@ -91,7 +91,7 @@ Instalación de Thunderbird en Mac OS X
 
 Para instalar Thunderbird en su Mac, siga los siguientes pasos:
 
- 1. Vaya a la [página de descargas de Thunderbird](http://www.mozillamessaging.com/en-US/thunderbird/). Esta página detectará el sistema operativo de su computadora y el idioma, recomendándole la mejor versión disponible para su uso.
+ 1. Vaya a la página de descargas de Thunderbird [http://www.mozillamessaging.com/en-US/thunderbird/](http://www.mozillamessaging.com/en-US/thunderbird/). Esta página detectará el sistema operativo de su computadora y el idioma, recomendándole la mejor versión disponible para su uso.
 
  ![Instalación de Thunderbird](thunderbird_inst_mac_1.jpg)
 

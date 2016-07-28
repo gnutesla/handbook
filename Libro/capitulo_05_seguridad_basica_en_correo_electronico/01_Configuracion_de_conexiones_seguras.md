@@ -45,6 +45,7 @@ Cuando haya terminado, haga click en **Create account**. Si Thunderbird no pudo 
 
 Configuración manual
 --------------------
+
 Utilice la interfaz para configurar manualmente las cuentas en Thunderbird. El cuadro de diálogo  de configuración de la cuenta se abrirá automáticamente si se selecciona **Manual setup** en el asistente de configuración. En este caso, sólo estamos interesados en los nombres de servidores de correo entrante y saliente, y el protocolo que se utiliza para conectarse con ellos. Como se puede ver en los ejemplos siguientes, ingresamos los nombres de los servidores de Gmail y los forzamos a utilizar **TLS/SSL**, un método seguro para conectarse a los servidores.
 
 ![Configurando la seguridad](thunderbird_conf_3.png)
