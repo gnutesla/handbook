@@ -1,7 +1,7 @@
 Instalación de Firefox en Windows
 =================================
 
- 1. Para descargar Firefox, visite su [página web](https://www.mozilla.com/firefox/).
+ 1. Para descargar Firefox, visite [https://www.mozilla.com/firefox/](https://www.mozilla.com/firefox/).
 
  ![Descarga de Firefox](ff_win_inst_1.png)
 
@@ -39,5 +39,5 @@ Si en ningún momento a través del proceso de instalación le piden ingresar co
 Problemas
 ---------
 
-Si surgen problemas con el uso de Firefox, consulte la sección de [ayuda](https://support.mozilla.com/kb/Firefox+will+not+start)
+Si surgen problemas con el uso de Firefox, consulte [https://support.mozilla.com/kb/Firefox+will+not+start](https://support.mozilla.com/kb/Firefox+will+not+start)
 

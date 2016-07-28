@@ -3,6 +3,20 @@ Uso de Tor
 
 Tor es un sistema pensado para facilitar el anonimato online, y está compuesto por un software cliente y una red de servidores los cuales pueden ocultar información acerca de la localización de los usuarios y otros factores que podrían identificarlos. Imagine un mensaje envuelto en muchas capas de protección: cada servidor tiene que quitar una capa, con lo que inmediatamente elimina la información del remitente del servidor anterior. 
 
+Si Alice desea visitar el sitio web de Bob en forma directa, lo representamos de la siguiente forma:
+
+	Alicia -> Bob
+
+Esto está bien, y Alicia y Bob podrán usar cifrado punto a punto para asegurarse la privacidad, la integridad y la autenticidad de sus comunicaciones. Sin embargo, si Alice no quiere que Bob sepa que ella está visitando su sitio web o no quiere que Eva (una hipotética espía, del lado de Alicia o del de Bob en la conexión) sepa que ella y Bob están comunicándose, se deben establecer algunos pasos extra.
+
+Alicia debe entablar una conexión cifrada con un nodo de entrada de la red Tor, aquí se establecerá una conexión TLS y el nodo de entrada le permitirá a Alicia establecer una comunicación a través de él. Una vez establecida dicha conexión TLS, se repite este proceso con un nodo de repetición, y entre éste y un nodo de salida. En este punto, Alicia cifrará sus datos 3 veces, primero a través del nodo de salida, luego a través del nodo repetidor y finalmente a través del nodo de entrada. La ruta establecida en la red luce de la siguiente manera:
+
+	Alicia -> Nodo de entrada -> Nodo repetidor -> Nodo de salida -> Bob
+
+Cuando el nodo de entrada recibe los datos de Alicia estos están aún cifrados por el nodo repetidor y el nodo de salida. El nodo de entrada conoce su procedencia (Alicia) pero no su destino final (Bob) ni su contenido. El nodo repetidor recibe los datos del nodo de entrada y los trasmite al nodo de salida. Los datos aún están cifrados por el nodo de salida, y no conoce el origen (Alicia) ni el destino (Bob). Cuando el nodo de salida recibe los datos del nodo repetidor, se remueve la última capa de cifrado: el nodo de salida puede ver los datos y el destino (Bob) pero no conoce su origen (Alicia).
+
+Esta aproximación por capas da su nombre a Tor (The Onion Router, el enrutador cebolla), cada capa conoce la capa en contacto con ella, y significa que nadie en la cadena excepto Alicia conoce la ruta completa que los datos están siguiendo; sin embargo, Alicia, Bob y el nodo de salida son capaces de leer el contenido del mensaje, por eso el cifrado punto a punto es requerido para asegurar la privacidad, la integridad y la autenticidad de las comunicaciones a través de la red Tor.
+
 El uso de este sistema hace que sea más difícil de rastrear el tráfico de Internet del usuario, que incluye visitas a sitios web, publicaciones en línea, mensajes instantáneos y otras formas de comunicación. Su objetivo es proteger la libertad personal de los usuarios, la privacidad y capacidad de hacer negocios confidenciales, al mantener sus actividades en Internet a salvo del monitoreo. Tor es software libre y la red es de uso gratuito.
 
 Como todas las redes actuales de anonimato de baja latencia, Tor no puede y no trata de protegerlo contra la vigilancia del tráfico en los extremos de la red, es decir, el tráfico que entra y sale de la red. Mientras que Tor proporciona protección contra el análisis de tráfico, no puede evitar la confirmación del tráfico (también llamada correlación de extremo a extremo)
@@ -17,101 +31,22 @@ El paquete Tor para navegadores le permite usar Tor en Windows, OSX o GNU/Linux 
 Descarga del paquete Tor para navegadores
 -----------------------------------------
 
-Puede descargarlo desde su [sitio web](https://www.torproject.org), como un archivo simple (13MB) o como una versión dividida en múltiples archivos de 1.4 MB cada uno para facilitar la descarga en conexiones lentas.
+Puede descargarlo desde el sitio web de torproject.org ([https://www.torproject.org](https://www.torproject.org)).
 
-Si el sitio web es filtrado desde donde usted está, tipee "tor mirrors" en su motor de búsqueda web favorito: el resultado incluya probablemente algunas direcciones alternativas para descargarlo.
+Si su país restringe el acceso al sitio web de tor, tipee "tor mirrors" en su motor de búsqueda web favorito: el resultado probablemente incluya algunas direcciones alternativas para descargarlo.
 
-Precaución: cuando usted descarga el paquete Tor (en sus versiones completa o dividida), debería verificar las firmas de los archivos, especialmente si lo está descargando desde un sitio espejo. Este paso le asegura que los archivos no han sido falsificados. Para aprender más acerca de archivos de firma y cómo revisarlos, consulte la [documentación](https://www.torproject.org/docs/verifying-signatures)
+Por favor, siga las instrucciones del sito web del proyecto Tor acerca de cómo instalarlo.
 
-(También puede descargar el software GnuPG que necesita para verificar la firma [aquí](http://www.gnupg.org/download/index.en.html#auto-ref-2)
+Precaución: cuando usted descarga el paquete Tor (en sus versiones completa o dividida), debería verificar las firmas de los archivos, especialmente si lo está descargando desde un sitio espejo. Este paso le asegura que los archivos no han sido falsificados. Para aprender más acerca de archivos de firma y cómo revisarlos, consulte [https://www.torproject.org/docs/verifying-signatures](https://www.torproject.org/docs/verifying-signatures)
 
-Las instrucciones más abajo se refieren a la instalación del navegador Tor en Microsoft Windows. Si está usando un sistema operativo diferente, consulte el sitio web torproject.org para enlaces de descarga e instrucciones.
 
-### Instalación a partir de un archivo único
+Ejecutando un repetidor o un puente
+-----------------------------------
 
- 1. En su navegador web, ingrese la URL [https://www.torproject.org/download/download](https://www.torproject.org/download/download)
+Tor es una red de voluntarios que ejecutan repetidores y puentes. Si desea ayudar al crecimiento de la red Tor contribuyendo con ancho de banda y ciclos extra de CPU, considere ejecutar un repetidor. Además, al correr un repetidor puede mejorar su anonimato ya que un atacante no puede distinguir entre el tráfico originado por usted o por el repetidor. Consulte [https://www.torproject.org/docs/faq.html.en#BetterAnonymity](https://www.torproject.org/docs/faq.html.en#BetterAnonymity) para obtener más detalles.
 
- ![Tor](tor_1.png)
+Sin embargo, si usted corre un repetidor, su dirección IP será listada en Internet como un repetidor Tor. Los clientes Tor dependen de esta lista, provista por los servidores del directorio de Tor, para poder establecer los circuitos. Si desea contribuir con Tor, pero no desea correr un repetidor público, considere ejecutar un puente. Ya que los repetidores Tor son públicos, algunos ISP bloquean el acceso a la red Tor bloqueando *todos los repetidores.*  Los puentes Tor, sin embargo, no están listados y además, son más difíciles de hallar.
 
- 2. Haga click en el enlace para su idioma para descargar el archivo de instalación.
+La meta de Tor es proteger el anonimato en Internet, pero algunas veces se usa con fines ilegales. Como operador de un repetidor, consulte [https://www.torproject.org/eff/tor-legal-faq.html](https://www.torproject.org/eff/tor-legal-faq.html), escrito por la Electronic Frontier Foundation (EFF). La EFF es una organización sin fines de lucro de EE.UU. cuya misión es "proteger sus derechos digitales." En otros países, deberían buscar asesoramiento de organizaciones similares. Sin embargo, los riesgos legales pueden ser minimizados corriendo un repetidor que no sea de salida o un puente.
 
- 3. En windows haga doble click en el archivo .EXE recién descargado. Aparecerá una ventana de un "archivo de auto extracción 7-Zip".
-
- ![Extrayendo Tor](tor_2.png)
-
- 4. Elija una carpeta en la cual extraer los archivos y pulse "Extract".
-
- **Nota:** Puede elegir extraer los archivos directamente en una pendrive o en una memoria USB si desea usar Tor en diferentes computadoras (por ejemplo en computadoras públicas en cibercafés).
-
- 5. Cuando se complete la extracción, abra la carpeta y revise que el contenido coincide con la imagen debajo:
-
- ![Revisando el contenido](tor_3.png)
-
- 6. Para limpiar, borre el archivo .EXE que usted descargó.
-
-### Instalación a partir de archivos separados
-
- 1. En su navegador web, ingrese la URL para la versión dividida del paquete Tor para navegadores (https://www.torproject.org/torbrowser/split.html), luego haga click en el enlace para su idioma para obtener una página que luce como la de abajo (en inglés):
- 
- ![Tor](tor_4.png)
-
- 2. Haga click en cada archivo para descargarlo (uno terminado en ".exe" y nueve finalizados en ".rar"), uno después de otro, y grábelos a todos en una carpeta única en su disco rígido o en su dispositivo de almacenamiento USB.
-
- 3. Haga doble click en la primera parte (el archivo con extensión ".exe"). Se ejecutará un programa que agrupará a todas las partes.
-
- ![Tor](tor_5.png)
-
- 4. Elija una carpeta donde quiera instalar los archivos, y pulse "Install". El programa mostrará mensajes acerca de su progreso mientras se ejecuta, y luego se quitará.
-
- 5. Cuando se complete la extracción, abra la carpeta y revise que el contenido coincida con el mostrado abajo:
-
- ![Revisando el contenido](tor_6.png)
-
- 6. Para limpiar, borre el archivo .EXE que usted descargó.
-
-Uso del navegador Tor
----------------------
-
-Antes de comenzar:
-
- * **Cierre Firefox.** Si Firefox está instalado en su computadora, asegúrese que no esté ejecutándose.
-
- * **Cierre Tor.** Si Tor está instalado en su computadora, asegúrese que no esté ejecutándose.
-
-Abriendo el navegador Tor:
-
- 1. En la carpeta "Tor Browser", haga doble click en "Start Tor Browser". El panel de control de Tor ("Vidalia") se abrirá y se conectará a la red Tor.
-
- ![Iniciando Tor](tor_7.png)
-
- 2. Cuando se establezca una conexión, Firefox se conectará automáticamente a la página de TorCheck y confirmará que usted está conectado a la red Tor. Esto puede tardar algún tiempo, dependiendo de la calidad de su conexión a Internet.
-
- ![Conectándose a Internet](tor_8.png)
-
- 3. Si está conectado a la red Tor, aparecerá un ícono de una cebolla verde en la bandeja del sistema en la esquina inferior derecha de su pantalla:
-
- ![Conexión establecida](tor_9.png)
-
-Navegación por la web usando Tor
---------------------------------
-
-Intente visitar unos pocos sitios web, sin importar su contenido. Los sitios se cargarán más lentamente porque su conexión está siendo enrutada a través de varias repetidoras.
-
-Si no funciona
---------------
-
-Si la cebolla en el panel de control de Vidalia nunca se pone verde o si está abierto Firefox, pero muestra una página que dice "Sorry. You are not using Tor", como la imagen de abajo, entonces usted no está usando Tor.
-
-![Tor no está conectado](tor_10.png)
-
-Si ve este mensaje, cierre Firefox y el navegador Tor y repita los pasos de arriba. Puede llevar a cabo esta prueba para asegurarse de estar usando Tor en cualquier momento, haciendo click en el botón del marcador etiquetado como "TorCheck at Xenobite..." en la barra de herramientas de Firefox.
-
-Si Firefox no se inicia, puede ser que otra instancia del navegador esté interfiriendo con Tor. Para solucionar esto:
-
- 1. Abra el administrador de tareas de Windows. Cómo hacer esto depende de cómo esté configurada su computadora. En la mayoría de los sistemas, puede hacer click derecho en la barra de tareas y luego pulsar "Task Manager".
- 2. Seleccione la etiqueta "Processes".
- 3. Busque un proceso en la lista denominado "firefox.exe".
- 4. Si lo encuentra, seleccione la entrada "End Process".
- 5. Repita los pasos previos para iniciar Tor.
-
-Si Tor aún no funciona después de dos o tres intentos, puede estar bloqueado por su ISP, debería intentar de usar la funcionalidad **bridge** de Tor.
+Si desea configurar su computadora para correr un repetidor o un puente, visite el [https://www.torproject.org/docs/tor-doc-relay.html.en](https://www.torproject.org/docs/tor-doc-relay.html.en) para obtener instrucciones.

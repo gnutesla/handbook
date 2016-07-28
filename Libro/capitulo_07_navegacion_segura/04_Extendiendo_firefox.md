@@ -11,7 +11,7 @@ Hay varios tipos de complementos:
  * *Temas* que permiten cambiar la apariencia de Firefox.
  * *Plugins* que ayudan a Firefox manejar las cosas que normalmente no puede procesar (por ejemplo, películas Flash, aplicaciones Java).
 
-Para los temas que se tratan en este libro sólo vamos a necesitar extensiones. Vamos a ver algunos complementos que son particularmente importantes para hacer frente a la seguridad en Internet. La variedad de extensiones disponibles es enorme. Puede añadir diccionarios de diferentes idiomas, realizar el seguimiento del clima en otros países, obtener sugerencias de los sitios web que son similares a la que usted está viendo en ese momento, y mucho más. Firefox mantiene una [lista de las extensiones actuales](https://addons.mozilla.org/firefox); también puede [buscar por categoría](https://addons.mozilla.org/firefox/browse).
+Para los temas que se tratan en este libro sólo vamos a necesitar extensiones. Vamos a ver algunos complementos que son particularmente importantes para hacer frente a la seguridad en Internet. La variedad de extensiones disponibles es enorme. Puede añadir diccionarios de diferentes idiomas, realizar el seguimiento del clima en otros países, obtener sugerencias de los sitios web que son similares a la que usted está viendo en ese momento, y mucho más. Firefox mantiene una lista de las extensiones actuales disponibles en ([https://addons.mozilla.org/firefox](https://addons.mozilla.org/firefox)); también puede buscar por categoría en [https://addons.mozilla.org/firefox/browse](https://addons.mozilla.org/firefox/browse).
 
 **Atención**: Nosotros le recomendamos que nunca instale un complemento si no está disponible en la página de complementos de Firefox. Usted nunca debe instalar Firefox a menos que obtenga los archivos de instalación de una fuente de confianza. Es importante tener en cuenta que el uso de Firefox en el ordenador de alguien o en un café con Internet aumenta su vulnerabilidad potencial. Sepa que usted puede tener Firefox en un CD o en una memoria USB (consulte el capítulo sobre este tema).
 
@@ -28,13 +28,12 @@ Por favor, tenga en cuenta que algunos de estos sitios todavía incluyen una gra
 
 Algunos sitios web (como Gmail) proporcionan soporte HTTPS automáticamente, pero utilizar HTTPS Everywhere también lo protegerá de ataques de eliminación de TLS/SSL, en los que un atacante oculta la versión HTTPS del sitio desde su computadora si en un inicio se intenta acceder a la versión HTTP.
 
-Información adicional se puede encontrar en su [sitio web](https://www.eff.org/https-everywhere).
-
+Información adicional se puede encontrar en su [https://www.eff.org/https-everywhere](https://www.eff.org/https-everywhere).
 
 Instalación
 ------------
 
-Primero, descargue la extensión HTTPS Everywhere desde el [sitio web oficial](https://www.eff.org/https-everywhere)
+Primero, descargue la extensión HTTPS Everywhere desde el sitio web oficial [https://www.eff.org/https-everywhere](https://www.eff.org/https-everywhere)
 
 ![HTTPS Everywhere](https_everywhere.png)
 
@@ -77,14 +76,25 @@ En este escenario, usted debería elegir usar HTTPS Everywhere junto con una tec
 Añadir soporte para sitios adicionales en HTTPS Everywhere
 ----------------------------------------------------------
 
-Usted puede agregar sus propias reglas a HTTPS Everywhere para sus sitios web favoritos. Puede encontrar cómo hacer esto en el siguiente [enlace web](https://www.eff.org/https-everywhere/rulesets). El beneficio de añadir reglas es que ellas le enseñan a HTTPS Everywhere cómo asegurarse que su acceso a estos sitios sea seguro. Pero recuerde: HTTPS Everywhere no le permitirá acceder a sitios seguros a menos que los operadores de los sitios hayan elegido ponerlos disponibles a través de HTTPS. Si un sitio no soporta HTTPS, no tendrá ningún beneficio añadir una regla para él.
+Usted puede agregar sus propias reglas a HTTPS Everywhere para sus sitios web favoritos. Puede encontrar cómo hacer esto en el siguiente [https://www.eff.org/https-everywhere/rulesets](https://www.eff.org/https-everywhere/rulesets). El beneficio de añadir reglas es que ellas le enseñan a HTTPS Everywhere cómo asegurarse que su acceso a estos sitios sea seguro. Pero recuerde: HTTPS Everywhere no le permitirá acceder a sitios seguros a menos que los operadores de los sitios hayan elegido ponerlos disponibles a través de HTTPS. Si un sitio no soporta HTTPS, no tendrá ningún beneficio añadir una regla para él.
 
 Si usted administra un sitio web y dispone de una versión HTTPS del sitio disponible, una buena práctica sería la de presentar su sitio web al lanzamiento oficial de HTTPS Everywhere.
+
+Forzando conexiones seguras sobre servidor HTTPS
+------------------------------------------------
+
+Aún cuando usted le de instrucciones a su navegador para que use el protocolo HTTPS cuando se comunique con un servidor web, es posible que el servidor (debido a una configuración insegura de su lado) fuerce a un protocolo cifrado SSL inseguro para la conexión. La única forma de prevenir es diciéndole al navegador que no acepte dichos protocolos inseguros SSL (como aquellos basados en cifrado RC4).
+
+Para deshabilitar el cifrado RC4 para las conexiones HTTPS haga lo siguiente. En la barra de direcciones vacía tipee "about:config", presione enter y cierre la ventana de diálogo de precaución que aparece (puede deshabilitar este diálogo si lo desea la próxima vez que configure Firefox). En el campo de búsqueda ingrese "rc4" y observe la lista desplegada como resultado de su búsqueda:
+
+![Deshabilitando RC4](disable_rc4.png)
+
+Una entrada con un "true" en la última columna (campo "Value") estará activa, debe desactivarla. Simplemente, con un click derecho en la entrada y cambie el valor a false. Proceda de la misma forma para todas las entradas.
 
 Adblock Plus
 ------------
 
-[Adblock Plus](http://www.adblockplus.org)) es conocido principalmente por bloquear publicidad en los sitios web. Pero también se puede usar para bloquear otro contenido que intenten  rastrearlo. Para mantenerse actualizado con las últimas amenazas, Adblock Plus depende de las listas negras mantenidas por voluntarios.
+Adblock Plus ([http://www.adblockplus.org](http://www.adblockplus.org)) es conocido principalmente por bloquear publicidad en los sitios web. Pero también se puede usar para bloquear otro contenido que intente rastrearlo. Para mantenerse actualizado con las últimas amenazas, Adblock Plus depende de las listas negras mantenidas por voluntarios.
 
 Información extra para Geeks: ¿Cómo bloquea direcciones Adblock Plus?
 
@@ -95,7 +105,7 @@ Comenzando con Adblock Plus
 
 Una vez que está instalado Firefox:
 
- 1. Descargue la última versión de Adblock Plus desde la base de datos de los complementos de Firefox
+ 1. Descargue la última versión de Adblock Plus desde la base de datos de los complementos de Firefox.
  2. Confirme que quiere instalar Adblock haciendo click en "Install Now".
  3. Después que Adblock Plus se ha instalado, Firefox se reiniciará.
 
@@ -106,7 +116,7 @@ Adblock Plus por sí mismo no hace nada. Puede ver cada elemento que un sitio we
 
 ![Ad Block Plus](abp_1.png)
 
-¿Cuál elegir? Adblock Plus ofrece algunos en un menú desplegable y posiblemente usted quiera saber algo acerca de las fortalezas y debilidades de cada uno. Un buen filtro para comenzar a proteger su privacidad es [EasyList](http://easylist.adblockplus.org/en).
+¿Cuál elegir? Adblock Plus ofrece algunos en un menú desplegable y posiblemente usted quiera saber algo acerca de las fortalezas y debilidades de cada uno. Un buen filtro para comenzar a proteger su privacidad es EasyList (también disponible en [http://easylist.adblockplus.org/en](http://easylist.adblockplus.org/en)).
 
 Por muy tentador que pueda parecer, no se suscriba a demasiados filtros, ya que algunos pueden superponerse, lo que resulta en resultados inesperados. EasyList (principalmente dirigido a sitios en idioma inglés) funciona bien con otras  extensiones EasyList (tales como extensiones específicas de la región, como las listas de RuAdList o listas temáticas como EasyPrivacy). Pero choca con la lista de Fanboy (otra lista con foco principal en sitios en idioma inglés).
 
@@ -133,8 +143,13 @@ Otras extensiones que pueden mejorar su seguridad
 
 Debajo hay una breve lista de extensiones que no están cubiertas en este libro y son de gran ayuda para su protección.
 
- * [**Flagfox**](https://addons.mozilla.org/en-US/firefox/addon/flagfox/) - pone una bandera en la barra de localización que le dice a usted en dónde es más probable que está situado el servidor que hospeda la página web que visita.
+ * **Flagfox** - pone una bandera en la barra de localización que le informa el lugar más probable en donde se encuentre el servidor web que hospeda la página web que está visitando [https://addons.mozilla,org/en-US/firefox/addon/flagfox/](https://addons.mozilla.org/en-US/firefox/addon/flagfox/)
 
- * [**BetterPrivacy**](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/) - administra las "cookies" usadas para rastreaslo mientras visita sitios web. Las cookies son pequeñas cantidades de información almacenada en su navegador. Algunas de ellas son usadas por los publicistas para rastrear los sitios que usted visita.
+ * **BetterPrivacy** - administra las "cookies" usadas para rastreaslo mientras visita sitios web. Las cookies son pequeñas cantidades de información almacenada en su navegador. Algunas de ellas son usadas por los publicistas para rastrear los sitios que usted visita. [https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/)
 
- * [**GoogleSharing**](https://addons.mozilla.org/en-us/firefox/addon/googlesharing/) - Si le preocupa que Google conozca su historial de búsqueda, esta extensión lo ayudará a evitarlo.
+ * **GoogleSharing** - Si le preocupa que Google conozca su historial de búsqueda, esta extensión lo ayudará a evitarlo [https://addons.mozilla.org/en-US/firefox/addon/googlesharing/](https://addons.mozilla.org/en-us/firefox/addon/googlesharing/)
+
+ * **NoScript** - Aunque no es demasiado amigable para los principiantes, este complemento bloqueará los scripts y el contenido de los plugins de terceras partes (por ejemplo, Adobe Flash) a menos de que usted se lo permita específicamente, también brinda una protección general contra simples vectores de cross site scripting [http://noscript.net](http://noscript.net)
+
+ * **User Agent Switcher** - Su navegador envía gran cantidad de información a cualquier servidor remoto a través del encabezado 'User-Agent', incluyendo su sistema operativo e información específica sobre su versión. Este complemento le permite a usted falsificar dicha información o enviar un User-Agent genérico al servidor. [http://chrispederick.com/work/user-agent-switcher/](http://chrispederick.com/work/user-agent-switcher/)
+
