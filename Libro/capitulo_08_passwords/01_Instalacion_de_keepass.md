@@ -55,7 +55,7 @@ Esto no hace otra cosa que mostrarle un resumen de sus opciones. Presione "Insta
 Instalación de KeePass en Mac OS X
 ----------------------------------
 
-Aunque KeyChain de Mac OS X hace un trabajo excelente al almacenar sus contraseñas, es posible que desee ejecutar su propia base datos y administrador de contraseñas. KeePass permite esta flexibilidad adicional. Primero visite la página web de descarga KeePass (http://keepass.info/download.html) y seleccione el instalador apropiado. Aunque los instaladores oficiales se enumeran en la parte superior de la página, hay instaladores no oficiales/contribuidos más abajo. Desplácese hacia abajo para encontrar [KeePass 2.x para Mac OS X](http://keepass2.openix.be/):
+Aunque KeyChain de Mac OS X hace un trabajo excelente al almacenar sus contraseñas, es posible que desee ejecutar su propia base datos y administrador de contraseñas. KeePass permite esta flexibilidad adicional. Primero visite la página web de descarga KeePass [http://keepass.info/download.html](http://keepass.info/download.html) y seleccione el instalador apropiado. Aunque los instaladores oficiales se enumeran en la parte superior de la página, hay instaladores no oficiales/contribuidos más abajo. Desplácese hacia abajo para encontrar [KeePass 2.x para Mac OS X][http://keepass2.openix.be/](http://keepass2.openix.be/):
 
 ![Keepass para Mac OS X](keepass_9.png)
 
@@ -69,7 +69,7 @@ El programa de instalación del paquete Mono se llama 'MonoFramework-MRE-2.10.5_
 
 ![MonoFramework](keepass_11.png)
 
-El instalador se abra y ejecuta:
+El instalador se abre y ejecuta:
 
 ![Instalando MonoFramework](keepass_12.png)
 
