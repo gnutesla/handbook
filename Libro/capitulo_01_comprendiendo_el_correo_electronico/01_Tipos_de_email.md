@@ -5,18 +5,19 @@ El correo electrónico se puede usar de dos maneras:
 
  * Lectura, escritura y envío de mensajes desde un *navegador web* (webmail), o
 
- * Lectura, escritura y envío usando un *programa de correo electrónico*, como Mozilla Thunderbird, Mail.App o Outlook Express.
+ * Lectura, escritura y envío usando un *programa de correo electrónico*, como Mozilla Thunderbird, Mail.App o Outlook Express utilizando protocolos tales como *SMTP*, *POP* e *IMAP*.
+
+Estos dos modelos pueden ser mixtos en la práctica, especialmente si se usa *IMAP*. Aunque el webmail es la  solución más adecuada para usar y más facil de mantener para usuarios finales que usen diferentes computadoras comparada con las soluciones más poderosas (más almacenamiento, mejores opciones de búsqueda y control directo de los datos) basadas en las aplicaciones nativas
 
 Correo electrónico almacenado remotamente ("webmail") usando un navegador web
 -----------------------------------------------------------------------------
 
-Los mensajes enviados por medio del *browser*, a veces llamado *webmail*, consisten en una cuenta con un almacenamiento remoto de correo electrónico tal como Google (Gmail), Microsoft (Hotmail) o Yahoo (Yahoo Mail). Las oportunidades de negocios abiertas al almacenar mensajes de correo de otras personas son muchas: contacto con otros servicios ofrecidos por la empresa, exposición de marcas comerciales y lo más importante, búsqueda entre sus mensajes de patrones que puedan ser usados para evaluar sus intereses – algo de gran valor en la industria de la publicidad (aunque también para determinados gobiernos).
+Los mensajes enviados por medio del *browser*, a veces llamado *webmail*, consisten en una cuenta con un almacenamiento remoto de correo electrónico tal como Google (Gmail), Microsoft (Hotmail) o Yahoo (Yahoo Mail). Las oportunidades de negocios abiertas al almacenar mensajes de correo de otras personas son muchas: contacto con otros servicios ofrecidos por la empresa, exposición de marcas comerciales y lo más importante, búsqueda entre sus mensajes de patrones que puedan ser usados para evaluar sus intereses – algo de gran valor en la industria de la publicidad (aunque también para determinados gobiernos). Por razones de data mining, dichas compañías *no están interesadas* en alentar a sus usuarios para que usen *cifrado para asegurar la privacidad* y/o *firmas para la integridad/autenticidad* de la comunicación. 
 
 Correo electrónico almacenado remotamente usando un programa o un navegador web
 -------------------------------------------------------------------------------
 
 Un programa de correo electrónico tal como Outlook, Thunderbird o Mail.App también puede ser usado con un servicio de webmail como Gmail o su compañía proveedora de servicio de correo electrónico. En cualquier caso, los mensajes aún pueden ser descargados en su computadora pero están retenidos en su servidor de correo (por ejemplo Gmail). De esta manera, para acceder a los mensajes no se requiere del uso del navegador todo el tiempo, pero aún estará usando Gmail, Hotmail, etc. como servicio. La diferencia entre almacenar los mensajes en su computadora con un programa de correo y hacerlo remotamente en un servidor (por ejemplo Hotmail, Gmail o el servidor de su universidad) en Internet puede parecer algo confuso al principio.
-Los mensajes enviados y recibidos usando un programa de correo, no se almacenan remotamente.
 
 Finalmente, también se pueden enviar mensajes a un servidor de correo electrónico sin que se almacenen allí en absoluto, simplemente lo reenvía a su destino tan pronto como llega al servidor de reenvío de correo electrónico. Google y Microsoft no permiten este tipo de configuración. Más bien esto suele ser algo que su universidad o empresa proveerá para usted. Tenga en cuenta que esto conlleva el riesgo de que el administrador del sistema haga copias secretamente de sus mensajes a medida que entran y salen del servidor.
 
@@ -26,12 +27,19 @@ Consideraciones de contexto
 ---------------------------
 
 Usted puede administrar un servidor y correr su propio servicio de correo electrónico. O almacenar sus mensajes en su empresa o en el servidor de sus jefes. Finalmente, usted puede usar un servicio mediante una corporación, por ejemplo Google (Gmail) or Microsoft (Hotmail). Cada uno presenta una interesante combo de consideraciones que se refieren precisamente al hecho básico de que a menos que la propia dirección de correo electrónico está cifrada, el administrador del servidor de correo electrónico aún puede copiar secretamente el correo electrónico en el momento que llegue al servidor. No importa que usted esté utilizando *TLS/SSL* (consulte el Apéndice **SSL**) para ingresar y consultar su correo electrónico, ya que sólo protege la conexión entre el equipo local y el servidor.
+
 Como siempre, si conoce los riesgos y se siente preocupado es sabio escuchar estos consejos - no envíe correos electrónicos sensibles utilizando un servicio que no sean de confianza.
 
 Empleador/Organización
 ----------------------
 
 Su empleador o la organización que esté involucrada está en excelente posición para aprovecharse de su confianza y leer los mensajes de su cuenta de correo electrónico laboral que se almacenan en el servidor, tal vez en un esfuerzo por aprender acerca de usted, de sus motivaciones, agendas e intereses. Estos casos de espionaje del empleador hacia el empleado son tan comunes que no merecen atención. La única solución es el cifrado del correo electrónico usando, por ejemplo, GPG (consulte el Apéndice **GPG**).
+
+Correos electrónicos & metadata
+-------------------------------
+
+La información del contenido actual de los correos puede ser preservada usando *OpenPGP* o *S/MIME* pero los metadatos - la asociación de personas, direcciones, tiempo y software y/o servicios usados - son almacenados por diversas plataformas. Los servicios gubernamentales pueden almacenar datos así como también las compañías involucradas en transmitirlos.
+Con respecto a la información del encabezado del mensaje de correo, permanece en riesgo durante la comunicación así como también las cuentas usadas pueden ser conectadas con individuos o grupos
 
 Servidor de correo auto administrado
 ------------------------------------

@@ -8,7 +8,6 @@ La escritura es en realidad una de las primeras formas de cifrado que no todo el
 Dicho de otro modo, el cifrado es la traducción de la información escrita en texto plano en una forma no legible (texto cifrado) mediante esquemas algorítmicos (cifrados). El objetivo es utilizar la clave correcta para abrir el mensaje y regresarlo de nuevo a su forma original de texto plano para que sea legible.
 
 Aunque la mayoría de los métodos de cifrado se refieren a la palabra escrita, durante la Segunda Guerra Mundial, el ejército de EE.UU. utilizó indios Navajos, que viajaban entre los campamentos enviando mensajes en su lengua nativa. La razón por la que el ejército utilizó la tribu Navajo era proteger la información que se enviaba de las tropas japonesas, que no podían descifrar el idioma navajo hablado. Este es un ejemplo muy simple de usar un lenguaje para enviar mensajes que no queremos que la gente escuche o que sepa lo que estamos discutiendo.
-
 ¿Por qué es tan importante el cifrado?
 --------------------------------------
 
@@ -42,21 +41,21 @@ El cifrado clásico se refiere al cifrado histórico, que está fuera de uso o n
 
 En el cifrado por trasposición, las cartas mismas se mantienen sin cambios, pero el orden dentro del mensaje se codifica de acuerdo con un esquema bien definido. Un ejemplo de un cifrado de transposición es la escítala, que fue utilizada en la antigua Roma y Grecia. Se envolvía una cinta de papel alrededor de una vara y se escribía el mensaje a lo largo. De esta forma el mensaje no se podía leer a menos que la cinta se envolviese nuevamente alrededor de una vara del mismo diámetro.
 
-![Escítala](crypto_1.png)
+![Escítala](assets/crypto_1.png)
 
 *Imagen: escítala, extraída de  Wikimedia Commons (3.10.12)*
 
 El cifrado por sustitución es una forma clásica de cifrado mediante el cual las letras o un grupo de ellas se reemplazan sistemáticamente a través del mensaje por otras letras (o un grupo de ellas). El cifrado de sustitución se divide en monoalfabético y polialfabético. El cifrado por desplazamiento del César es un ejemplo común de cifrado por sustitución monoalfabética, donde las letras del abecedario son desplazadas en un u otra dirección.
 
-![Cifrado del César](crypto_2.png)
+![Cifrado del César](assets/crypto_2.png)
 
-*Imagen: Cifrado por desplazamiento del César, extrída de Wikimedia Commons (3.10.12)*
+*Imagen: Cifrado por desplazamiento del César, extraída de Wikimedia Commons (3.10.12)*
 
-Las sustituciones polialfabéticas son más complejas que el cifrado por sustitución porque usan mas de un alfabeto más de un alfabeto y girado. Por ejemplo, el cifrado de Alberti, el primer cifrado polialfabético, fue creado en el siglo XV por León Battista Alberti, un erudito y humanista renacentista italiano al que también se lo conoce como el fundador de la criptografía occidental. Su cifrado es similar al cifrado de Vigenère, donde cada letra del alfabeto tiene un número único (por ejemplo, 1-26). El mensaje se cifra escribiendo la contraseña repetidamente por debajo de él.
+Las sustituciones polialfabéticas son más complejas que el cifrado por sustitución porque usan mas de un alfabeto y girado. Por ejemplo, el cifrado de Alberti, el primer cifrado polialfabético, fue creado en el siglo XV por León Battista Alberti, un erudito y humanista renacentista italiano al que también se lo conoce como el fundador de la criptografía occidental. Su cifrado es similar al cifrado de Vigenère, donde cada letra del alfabeto tiene un número único (por ejemplo, 1-26). El mensaje se cifra escribiendo la contraseña repetidamente por debajo de él.
 
 En el cifrado Vigenère los números correspondientes a las letras del mensaje y la clave se suman (los números que exceden al alfabeto se redondean hacia abajo) haciendo que el mensaje fuera tan difícil de leer que no podía ser descifrado por siglos (hoy en día, con la ayuda de las computadoras, esto obviamente no es cierto ya).
 
-![Cifrado de Vigenère](crypto_3.png)
+![Cifrado de Vigenère](assets/crypto_3.png)
 
 *Imagen: Cifrado de Vigenère, extraída de Wikimedia Commons (3.10.12)*
 

@@ -1,7 +1,10 @@
-Mucho de este contenido está basado en [http://en.cship.org/wiki/Special:Allpages](http://en.cship.org/wiki/Special:Allpages)
+Glosario
+========
+
+Gran parte de este contenido está basado en [http://en.cship.org/wiki/Special:Allpages](http://en.cship.org/wiki/Special:Allpages)
 
 Administrador de contraseñas
-============================
+----------------------------
 
 Un administrador de contraseñas es software que ayuda al usuario para organizar sus contraseñas y códigos PIN. El software generalmente tiene una base de datos local o un archivo que mantiene los datos de las contraseñas cifrados para conectarse en forma segura con otras computadoras, redes, sitios web y archivos de aplicaciones. KeePass http://keepass.info/ es un ejemplo.
 
