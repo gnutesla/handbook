@@ -29,8 +29,7 @@ El objetivo principal detrás del uso de un proxy es ocultar o cambiar la direcc
 
 Aunque el proxy debería utilizarse para acceder a la Web (HTTP), en la práctica el protocolo de Internet puede ser "proxificado", es decir, enviado vía servidor remoto. A diferencia de un router, un servidor proxy no envía directamente las peticiones de usuarios remotos, sino que interviene en las solicitudes y respuestas hechos a la computadora del usuario remoto.
 
-EL proxy (a menos que esté configurado como "transparente") no permite la comunicación directa a Internet por eso las aplicaciones tales como navegadores web, clientes de chat o aplicaciones de descargas deben tenerlo en cuenta al conectarse (vea el capítulo **Navegación web segura/Configuración de proxy**)
-
+El proxy (a menos que esté configurado como "transparente") no permite la comunicación directa a Internet por eso las aplicaciones tales como navegadores web, clientes de chat o aplicaciones de descargas deben tenerlo en cuenta al conectarse (vea el capítulo **Navegación web segura/Configuración de proxy**)
 
 Tor
 ---
@@ -43,10 +42,9 @@ Tor es un sistema destinado a permitir el anonimato en línea, compuesto por un 
 
 El uso de este sistema hace que sea más difícil de rastrear el tráfico en Internet del usuario, que incluye visitas a sitios web, publicaciones online, mensajes instantáneos y otras formas de comunicación. Su objetivo es proteger la libertad personal de los usuarios, la privacidad y la capacidad de hacer negocios confidencialmente, al evitar que sus actividades en Internet sean monitoreadas. El software es libre y la red de uso gratuito.
 
-Tor no puede y no intenta protegerlo del monitoreo del tráfico que entra y sale de la red. Mientras que Tor proporciona protección contra el análisis de tráfico, no puede evitar que el tráfico de confirmación (también llamado correlación de extremo a extremo). La *correlación de extremo a extremo* es una manera de hacer coincidir una identidad online con una persona real.
+Tor no puede y no intenta protegerlo del monitoreo del tráfico que entra y sale de la red. Mientras que Tor proporciona protección contra el análisis de tráfico, no puede evitar el tráfico de confirmación (también llamado correlación de extremo a extremo). La *correlación de extremo a extremo* es una manera de hacer coincidir una identidad online con una persona real.
 
-Un ejemplo reciente involucra al FBI que quería demostrar que un hombre, Jeremy Hammon, estaba detrás de un alias que se sabía responsable de varios ataques anónimos. Sentado frente a su casa, el FBI estaba monitoreando su tráfico inalámbrico junto a un canal de chat que sabía que visitaba el alias. Cuando Jeremy se conectó en su apartamento, la inspección de los paquetes inalámbricos reveló que estaba usando Tor en el mismo momento en que el alias sospechado asociado con él se conectó al canal de chat vigilado. Esto fue suficiente para incriminar a Jeremy y él fue arrestado.
-
+Un ejemplo reciente involucra al FBI que quería demostrar que un hombre, Jeremy Hammond, estaba detrás de un alias que se sabía responsable de varios ataques anónimos. Sentado frente a su casa, el FBI estaba monitoreando su tráfico inalámbrico junto a un canal de chat que sabía que visitaba el alias. Cuando Jeremy se conectó en su apartamento, la inspección de los paquetes inalámbricos reveló que estaba usando Tor en el mismo momento en que el alias sospechado asociado con él se conectó al canal de chat vigilado. Esto fue suficiente para incriminar a Jeremy y él fue arrestado.
 
 Consulte la sección **Navegación segura/Uso de Tor** para instrucciones de configuración.
 

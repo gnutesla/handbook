@@ -39,7 +39,7 @@ Mientras que algunos clientes pueden cantar alabanzas de la publicidad dirigida 
 
 Incluso aunque se haya asegurado que las cookies se borraron, su *User Agent* ha sido cambiado (vea más abajo y en el capítulo de **Seguimiento**) y todavía está informando un dato crucial: la dirección de Internet de dónde se conecta (vea el capítulo **¿Qué sucede mientras navega**). Para evitar esto, puedes usar un servicio de anonimato como Tor (ver capítulo **Anonimato**). Si usted es un usuario de Firefox (recomendado), asegúrese de instalar el excelente complemento *Google Sharing*, que mantiene su anonimato mientras realiza una búsqueda en Google. Incluso si no usa Google, debe cuidarse de un gran número de sitios web que utilizan una barra personalizada de búsqueda de Google como un medio para explorar su contenido
 
-Por lo dicho anteriormente, no se puede confiar en Google, en Yahoo ni en Bing. Nosotros recomendamos cambiar por un servicio de búsqueda que toma en cuenta su derecho a la privacidad muy seriamente: [DuckDuckGo](http://duckduckgo.com/).
+Por lo dicho anteriormente, no se puede confiar en Google, en Yahoo ni en Bing. Nosotros recomendamos cambiar por un servicio de búsqueda que toma en cuenta su derecho a la privacidad muy seriamente: DuckDuckGo ([http://duckduckgo.com/](http://duckduckgo.com/)).
 
 Más ojos de los que usted puede ver
 -----------------------------------
