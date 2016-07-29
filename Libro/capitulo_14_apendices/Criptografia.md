@@ -63,8 +63,6 @@ Durante la Segunda Guerra Mundial se produjo la explosión de la criptografía, 
 
 El algoritmo OTP se encuentra presente en varios sistemas de cifrado de flujo, que se explican a continuación. Claude Shannon, (un participante clave en la criptografía moderna y en la teoría de la información), en su artículo fundamental de 1949, "Teoría de la Comunicación de Sistemas Secretos" demuestra teóricamente que todo sistema de cifrado irrompibles debe incluir el cifrado OTP, el cual de ser usado correctamente es imposible de descifrar.
 
-
-
 Cifrado moderno
 ---------------
 
