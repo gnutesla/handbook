@@ -1,4 +1,4 @@
-Instalación de I2P on Ubuntu
+Instalación de I2P on Ubuntu Lucid Lynx (y posteriores) y sus derivados como Linux Mint & Trisquel
 ============================
 
  1. Abra una terminal y escriba:
@@ -27,5 +27,18 @@ En la ventana de Connection Settings, haga click en el círculo cercano a Manual
 
 ![I2P](i2p_1.jpg)
 
-Para más información y cómo configurar proxies para otros navegadores visite la [web de i2p2](http://www.i2p2.de/htproxyports.htm)
+Para más información y cómo configurar proxies para otros navegadores consulte [https://www.i2p2.de/htproxyports.htm](https://www.i2p2.de/htproxyports.htm)
+
+Instrucciones para Debian Lenny y posteriores
+=============================================
+Para más información visita esta página [https://www.i2p2.de/debian.html](https://www.i2p2.de/debian-html)
+
+
+Empezando con I2P
+=================
+Usando estos paquetes I2P el router I2P puede iniciar de alguna de las siguientes formas:
+
+* "on demand" usando el script i2prouter. Simplemente ejecute "i2prouter start" en un terminal. (Nota: ¡no use sudo ni lo ejecute como root!)
+* como un servicio que se ejecuta automáticamente cuando inicia su sistema, aún antes de loguearse. El servicio puede ser habilitado con "dpkg-reconfigure i2p" como root o mediante sudo. Esta es la manera recomendada.
+
 
