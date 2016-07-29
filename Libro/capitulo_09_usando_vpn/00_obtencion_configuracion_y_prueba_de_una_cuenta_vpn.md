@@ -9,6 +9,9 @@ Una cuenta de un proveedor comercial de VPN
 -------------------------------------------
 
 Hay múltiples proveedores de VPN ahí afuera. Algunos le ofrecerán probarlo gratis por un tiempo, otros comenzarán a cobrarle una tarifa fija por mes. Busque un proveedor de VPN que ofrezca cuentas con OpenVPN - una solución libre disponible para GNU/Linux, OS X y Windows, además de Android e iOS.
+
+Cuando elija un proveedor VPN debe considerar los siguientes puntos:
+
  * Cuando menos información le sea pedida para registrar una cuenta mejor. Un proveedor de VPN verdaderamente preocupado por su privacidad sólo le pedirá una dirección de correo electrónico (¡haga una temporal!), nombre de usuario y contraseña. No se necesita más, a menos que el proveedor cree una base de datos de usuarios, que es muy probable que no quieran ser parte de ello.
  * Formas de pago que se utilizarán para pagar su suscripción: la transferencia de efectivo es probablemente el método más propenso a la privacidad, ya que no vincula su cuenta bancaria con su identificación en la red VPN. PayPal también puede ser una opción aceptable suponiendo que usted puede registrar y utilizar una cuenta temporal para cada pago. El pago a través de una transferencia bancaria o con tarjeta de crédito puede socavar gravemente su anonimato incluso más allá de la VPN.
  * Evite los proveedores de VPN que le obliguen a instalar su propio software cliente propietario. Existen soluciones libres disponibles para todas las plataformas, y tener que ejecutar un cliente "especial" es una clara señal de un servicio falso.
@@ -35,7 +38,7 @@ Configuración de su cliente VPN
 
 Hay muchos estándares diferentes para configurar VPN, incluyendo PPTP, LL2P/IPSec y **OpenVPN**. Varían en complejidad, nivel de seguridad provisto y disponibilidad de sistemas operativos. No use PPTP porque presenta importantes fallas de seguridad. En este manual nos concentraremos en OpenVPN. Funciona en la mayoría de versiones de GNU/Linux, OSX y Windows. OpenVPN se basa en TLS/SSL - usa el mismo tipo de **cifrado** que usa HTTPS (HTTP segura) y una gran cantidad de otros protocolos de cifrado. El cifrado de OpenVPN se basa en el algoritmo de intercambio de claves **RSA**. Para poder establecer una comunicación, tanto el servidor como el cliente necesitan claves RSA públicas y privadas.
 
-Una vez que obtiene el acceso a una cuenta VPN el servidor genera las claves y usted simplemente necesita descargarlas del sitio web de su proveedor o recibirlas por medio de un correo electrónico. Junto con sus claves recibirá un *certificado de raíz (\*.ca)* y un *archivo de configuración principal (\*.conf o \*.ovpn)*. En la mayoría de los casos solamente se necesitan los siguientes archivos para configurar y correr un cliente OpenVPN:
+Una vez que obtiene el acceso a una cuenta VPN el servidor genera las claves y usted simplemente necesita descargarlas del sitio web de su proveedor o recibirlas por medio de un correo electrónico. Junto con sus claves recibirá un certificado de raíz (\*.ca) y un archivo de configuración principal (\*.conf o \*.ovpn). En la mayoría de los casos solamente se necesitan los siguientes archivos para configurar y correr un cliente OpenVPN:
 
  * **client.conf** (o client.ovpn) - archivo de configuración que incluye todos los parámetros necesarios. NOTA: en algunos casos las claves y los certificados pueden estar embebidos dentro del archivo de configuración principal. En tal caso los archivos mencionados más abajo no son necesarios.
  * **ca.crt** (excepto en el archivo de configuración) - certificado de autoridad raíz de su servidor VPN, usado para firmar y y comprobar otras claves emitidas por el proveedor.
@@ -60,4 +63,15 @@ Si desea utilizar OpenVPN en Windows u OSX, consulte:
 
  * [OpenVPN](http://openvpn.se) (interfaz Windows)
  * [Tunnel Blick](http://code.google.com/p/tunnelblick) (interfaz OSX)
+
+Advertencias...¡Cuidado!
+------------------------
+
+Aunque un VPN ocultará su dirección IP, debido a la naturaleza de la mayoría de los VPN los metadatos de su pila TCP/IP y otra información de identificación puede ser enviada.
+
+Esto puede parecer trivial, pero fíjese, un encabezado IP estándar tiene 20 bytes de tamaño, algunos de los cuales se llenan con información obvia (4 bytes para la IP origen, 4 bytes para la IP destino, etc.) pero algunos bytes del encabezado pueden tener otras opciones arbitrarias; el encabezado TCP tiene al menos 20 bytes también, con el potencial para otros 20. La configuración específica de estas opciones varía según el sistema operativo, incluso según su versión, así como un simple paquete SYN de TCP es a menudo suficiente para identificar el sistema operativo en uso, la versión y otra información reveladora, como el tiempo de actividad del sistema. Existen herramientas fácilmente disponibles [http://lcamtuf.coredump.cx/p0f3/](http://lcamtuf.coredump.cx/p0f3/) que puede ser usado para obtener la huella de esta información; como prueba, intente conectarse a un servidor que ejecute esta herramienta con su conexión normal a Internet, luego conéctese nuevamente a través de su VPN. Muy probablemente verá que las huellas son idénticas, y que si su amigo se conecta su huella será diferente.
+
+Por eso, es importante que recuerde lo siguiente:
+ * nadie irá a la cárcel por usted, si su proveedor VPN es alcanzado por una requisitoria legal para obtener información acerca de usted, ellos la brindarán. Porque declaren que no mantienen registros de actividad no significa que no los tengan.
+ * las VPN proveen privacidad, no anonimato
 
