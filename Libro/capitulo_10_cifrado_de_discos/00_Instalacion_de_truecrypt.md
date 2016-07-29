@@ -1,14 +1,14 @@
 Instalando TrueCrypt
 ====================
 
-TrueCrypt puede ser instalado en Windows, GNU/Linux, o Mac OSX. Los archivos de instalación están disponibles en su [página web](http://www.truecrypt.org/downloads)
+TrueCrypt puede ser instalado en Windows, GNU/Linux, o Mac OSX. Los archivos de instalación están disponibles en su página web [http://www.truecrypt.org/downloads](http://www.truecrypt.org/downloads)
 
 La sección siguiente explica detalladamente como instalar TrueCrypt en su computadora para diversos sistemas operativos, comenzando con Ubuntu.
 
 Instalación en Ubuntu
 ---------------------
 
-TrueCrypt no está disponible en los repositorios estándares de Ubuntu. Esto significa que no puede usar el centro de software Ubuntu o *apt-get* (el método de la línea de comandos para instalar software en Ubuntu). Además, debería visitar primeramente la página de descargas de [TrueCrypt](http://www.truecrypt.org/downloads).
+TrueCrypt no está disponible en los repositorios estándares de Ubuntu. Esto significa que no puede usar el centro de software Ubuntu o *apt-get* (el método de la línea de comandos para instalar software en Ubuntu). Además, debería visitar primeramente la página de descargas ([http://www.truecrypt.org/downloads](http://www.truecrypt.org/downloads).
 
 Usted verá primero un menú desplegable bajo el encabezado Linux.
 
@@ -80,7 +80,7 @@ Instalación en OSX
 Instalación en Windows
 ----------------------
 
-Para instalar TrueCrypt en Windows primeramente visite la [página de descarga](http://www.truecrypt.org/downloads) y presione el botón de descarga de la sección de Windows.
+Para instalar TrueCrypt en Windows primeramente visite la página de descarga ([http://www.truecrypt.org/downloads](http://www.truecrypt.org/downloads)) y presione el botón de descarga de la sección de Windows.
 
 Descárguelo a su computadora y haga doble click en el archivo. Verá un acuerdo de usuario.
 

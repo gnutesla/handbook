@@ -44,7 +44,6 @@ Bueno, usted se sorprenderá por la similitud entre este ejemplo y el mundo real
 
 Con un disco rígido la situación es muy similar. Incluso si se borra cada pieza de datos, a veces es posible recuperar parte de estos datos usando un hardware (muy) especializado. Si los datos son muy confidenciales y deben ser borrados con el mayor cuidado, se puede utilizar software para "sobreescribir" todas las piezas de datos con datos aleatorios. Si se hace esto varias veces, será virtualmente imposible recuperar los datos. 
 
-
 Nota acerca de los discos rígidos de estado sólido
 --------------------------------------------------
 
